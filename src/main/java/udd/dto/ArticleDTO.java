@@ -46,6 +46,16 @@ public class ArticleDTO {
 	@JsonProperty
 	private GeoPoint geo_point;
 	
+	private boolean open_access;
+	
+	public boolean isOpen_access() {
+		return open_access;
+	}
+
+	public void setOpen_access(boolean open_access) {
+		this.open_access = open_access;
+	}
+
 	public ArticleDTO(){}
 
 	public Long getId() {

@@ -252,27 +252,18 @@ public class ElasticSearchServiceImpl implements ElasticSearchService{
 		String searchText = articleElasticSearchRepository.findById(id).get().getPdfText();
 		System.out.println("Search text: " + searchText);
 		
-		// tekst koji pretrazujem
 		String searchArray[] = { searchText };
 
-		// polja koja pretrazujem
 		String fields[] = { "pdfText" };
 
-		// ovde zadam id dokumenta u odnosu na koji pretrazujem
 		MoreLikeThisQueryBuilder.Item[] items = { new MoreLikeThisQueryBuilder.Item("article", "paper", id.toString()) };
 
 		MoreLikeThisQueryBuilder qb = QueryBuilders.moreLikeThisQuery(fields, searchArray, items);
 		
-		// The minimum document frequency below which the terms will be ignored from the input document. Defaults to 5.
 		qb.minDocFreq(1);
-		// The minimum term frequency below which the terms will be ignored from the input document. Defaults to 2.
 		qb.minTermFreq(1);
-		// The analyzer that is used to analyze the free form text. Defaults to the analyzer associated with the first field in fields.
 		qb.analyzer("serbian-analyzer");
-		// The maximum number of query terms that will be selected. Increasing this value gives greater accuracy at the expense of query execution speed. Defaults to 25.
 		qb.maxQueryTerms(100);
-		
-
 		
 		System.out.println("\nRequest: " + qb);
 		SearchResponse response = elasticSearchTemplate.getClient().prepareSearch("article").setQuery(qb).get();

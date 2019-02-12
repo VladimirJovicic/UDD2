@@ -63,7 +63,13 @@ public class DataLoader implements ApplicationRunner{
 					dto.setPdfText(text);
 					dto.setAbstractDescription("Abstract description " + dto.getId());
 					dto.setScientificArea("Area " + dto.getId());
-					dto.setGeo_point(new GeoPoint(50 + id*0.001, 50 - id*0.001));
+					if(id % 2 == 0){
+						dto.setOpen_access(false);
+						dto.setGeo_point(new GeoPoint(50 , 50));
+					}else {
+						dto.setOpen_access(true);
+						dto.setGeo_point(new GeoPoint(50 + id , 50 - id));
+					}
 					
 					elasticsearchTemplate.getClient().prepareIndex("article", "article", dto.getId().toString())
 					   .setSource(dto, XContentType.JSON).get();

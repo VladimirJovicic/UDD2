@@ -14,7 +14,11 @@
   </table>
   <button (click)="searchByOptionalField()">Trazi</button>
 </div>
+
+
 <br><br>
+
+
 <div class="box">
   <table>
     <tr>
@@ -35,18 +39,170 @@
         <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap.scientificArea"></td>
     </tr>
   </table>
-  <button (click)="searchByMultipleOptionalFields()">Trazi</button>
+  <button (click)="searchByMultipleFields()">Trazi</button>
+</div>
+
+<br><br>
+
+<div class="box">
+  <table>
+    <tr>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap2.magazine" />Naziv
+          casopisa</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap2.magazine"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap2.title" />Naslov</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap2.title"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap2.author" />Autor</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap2.author"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap2.keywords" />Kljucni
+          pojmovi</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap2.keywords"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap2.pdfText" />Sadrzaj</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap2.pdfText"></td>.
+      <td><label><input (click)="setField('magazine')" type="checkbox"
+            [(ngModel)]="boolMap2.scientificArea" />Oblasti</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap2.scientificArea"></td>
+    </tr>
+
+    <tr>
+      <td colspan="3">
+        Select optionals
+        <div style="margin-left: 50px;">
+          <p><label><input type="checkbox" (change)="addRemoveOptional('magazine')" />Naziv casopisa</label>
+          </p>
+          <p><label><input type="checkbox" (change)="addRemoveOptional('title')" />Naslov</label></p>
+          <p><label><input type="checkbox" (change)="addRemoveOptional('author')" />Autor</label></p>
+          <p><label><input type="checkbox" (change)="addRemoveOptional('keywords')" />Kljucni pojmovi</label></p>
+          <p><label><input type="checkbox" (change)="addRemoveOptional('pdfText')" />Sadrzaj</label></p>
+          <p><label><input type="checkbox" (change)="addRemoveOptional('scientificArea')" />Oblasti</label></p>
+        </div>
+      </td>
+
+      <td colspan="3">
+        Select phrases
+        <div style="margin-left: 50px;">
+          <p><label><input type="checkbox" (change)="addRemovePhrases('magazine')" />Naziv casopisa</label></p>
+          <p><label><input type="checkbox" (change)="addRemovePhrases('title')" />Naslov</label></p>
+          <p><label><input type="checkbox" (change)="addRemovePhrases('author')" />Autor</label></p>
+          <p><label><input type="checkbox" (change)="addRemovePhrases('keywords')" />Kljucni pojmovi</label></p>
+          <p><label><input type="checkbox" (change)="addRemovePhrases('pdfText')" />Sadrzaj</label></p>
+          <p><label><input type="checkbox" (change)="addRemovePhrases('scientificArea')" />Oblasti</label></p>
+        </div>
+      </td>
+    </tr>
+
+  </table>
+  <button (click)="multipleOptionalFields()">Trazi</button>
 </div>
 
 
+<div *ngIf='articles.length > 0' align='center'>
+  <h1>Search results<a (click)="closeArticles()" style="cursor: pointer; color: blue">[x]</a></h1>
+  <table style="width: 80%;margin-bottom: 150px;" align="center" border='1'>
+    <tr>
+      <th>Magazine</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Keywords</th>
+      <th>Text</th>
+      <th>Scientific Area</th>
+      <th>More like this</th>
+      <th>GeoPoint</th>
+      <th>Get</th>
+    </tr>
+    <tr *ngFor="let article of articles" style="margin-bottom: 50px;">
+      <td>{{article.magazine}}</td>
+      <td>{{article.title}}</td>
+      <td>{{article.author}}</td>
+      <td>{{article.keywords}}</td>
+      <td>
+        <div class="scrollable">
+          {{article.pdfText}}
+        </div>
+      </td>
+      <td>{{article.scientificArea}}</td>
+      <td>
+        <button (click)="moreLikeThis(article.id)">More like this</button>
+      </td>
+      <td>
+        <button (click)="geoPointSearch(article.geo_point.lat,article.geo_point.lon)">GeoPoint search</button>
+      </td>
+      <td *ngIf='article.open_access'>
+        <button (click)="download(article.title)">Download</button>
+      </td>
+      <td *ngIf='!article.open_access'>
+        <button (click)="addToCart()">Add to cart</button>
+      </td>
+    </tr>
+  </table>
+</div>
 
 
+<div *ngIf='moreLikeThisArticles.length > 0' align='center'>
+  <h1>More like this <a (click)="closeMoreLikeThis()" style="cursor: pointer; color: blue">[x]</a>
+  </h1>
+  <table style="width: 80%;margin-bottom: 150px;" align="center" border='1'>
+    <tr>
+      <th>Magazine</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Keywords</th>
+      <th>Text</th>
+      <th>Scientific Area</th>
+      <th>Get</th>
+    </tr>
+    <tr *ngFor="let article of moreLikeThisArticles" style="margin-bottom: 50px;">
+      <td>{{article.magazine}}</td>
+      <td>{{article.title}}</td>
+      <td>{{article.author}}</td>
+      <td>{{article.keywords}}</td>
 
+      <td>
+        <div class="scrollable">
+          {{article.pdfText}}
+        </div>
+      </td>
+      <td>{{article.scientificArea}}</td>
+      <td *ngIf='article.open_access'>
+        <button (click)="download(article.title)">Download</button>
+      </td>
+      <td *ngIf='!article.open_access'>
+        <button (click)="addToCart()">Add to cart</button>
+      </td>
+    </tr>
+  </table>
+</div>
 
-<div>
-  <p *ngFor="let article of articles">
-    {{article.id}}
-    {{article.title}}
-    {{article.author}}
-  </p>
+<div *ngIf='geoPointArticles.length > 0' align='center'>
+  <h1>GeoPoint search result <a (click)="closeGeoPointArticles()" style="cursor: pointer; color: blue">[x]</a>
+  </h1>
+  <table style="width: 80%;margin-bottom: 150px;" align="center" border='1'>
+    <tr>
+      <th>Magazine</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Keywords</th>
+      <th>Text</th>
+      <th>Scientific Area</th>
+      <th>Get</th>
+    </tr>
+    <tr *ngFor="let article of geoPointArticles" style="margin-bottom: 50px;">
+      <td>{{article.magazine}}</td>
+      <td>{{article.title}}</td>
+      <td>{{article.author}}</td>
+      <td>{{article.keywords}}</td>
+      <td>
+        <div class="scrollable">
+          {{article.pdfText}}
+        </div>
+      </td>
+      <td>{{article.scientificArea}}</td>
+      <td *ngIf='article.open_access'>
+        <button (click)="download(article.title)">Download</button>
+      </td>
+      <td *ngIf='!article.open_access'>
+        <button (click)="addToCart()">Add to cart</button>
+      </td>
+    </tr>
+  </table>
 </div>
