@@ -30,7 +30,7 @@ cluster.name: jovas_cLuStEr
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-path.data: C:\Users\Vladimir.JOVICIC\Desktop\udd-jovas
+path.data: C:\Users\Vladimir.JOVICIC\Desktop\New folder
 #
 # Path to log files:
 #

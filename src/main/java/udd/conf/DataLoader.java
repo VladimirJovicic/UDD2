@@ -1,5 +1,13 @@
 package udd.conf;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.pdfbox.io.RandomAccessFile;
+import org.apache.pdfbox.pdfparser.PDFParser;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDDocumentInformation;
+import org.apache.pdfbox.text.PDFTextStripper;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -22,37 +30,83 @@ public class DataLoader implements ApplicationRunner{
 	
 	public void prepareIndexes() {
 		
-		ArticleDTO article1 = new ArticleDTO(Long.valueOf(1),"apstraktni opis",
-											"pera","keyword1 keyword2","casopis","neki pdf tekst",
-											"biologija","pronalazenje biologije",
-											new GeoPoint(45.254282, 19.819469));
-		article1.setPdfText("neki pdf tekts");
-		article1.setMagazine("magazine1111");
+		long id = 1;
 		
-		ArticleDTO article2 = new ArticleDTO(Long.valueOf(2),"apstraktni opis2",
-				"mika","keyword1 keyword2","casopis","neki pdf tekst",
-				"biologija","pronalazenje biologije",
-				new GeoPoint(45, 19));
-		article2.setPdfText("neki pdf tekts za uporedjivanje nekih samo tako random stvari i ove reci svakako pisem tako random samo ");
-		article2.setMagazine("magazine2222");
-		elasticsearchTemplate.getClient().prepareIndex("article", "article", "1")
-		   .setSource(article1, XContentType.JSON)
-		   .get();
+		try {
+			File folder = new File("src/main/java/udd/elastic");
+			File[] listOfFiles = folder.listFiles();
+			for (File file : listOfFiles) {
+			    if (file.isFile() && file.getName().endsWith(".pdf")){
+			    	PDFParser parser = new PDFParser(new RandomAccessFile(file, "r"));
+					parser.parse();
+					String text = getText(parser);  
+
+
+					// metadata extraction
+					PDDocument pdf = parser.getPDDocument();
+					PDDocumentInformation info = pdf.getDocumentInformation();
+					
+					System.out.println("--------------------");
+					System.out.println(info.getAuthor());
+					System.out.println(info.getTitle());
+					System.out.println(info.getKeywords());
+					System.out.println(info.getSubject());
+					//System.out.println(text);
+					System.out.println("--------------------");
+					
+					ArticleDTO dto = new ArticleDTO();
+					dto.setId(id);
+					dto.setAuthor(info.getAuthor());
+					dto.setTitle(info.getTitle());
+					dto.setKeywords(info.getKeywords());
+					dto.setMagazine(info.getSubject());
+					dto.setPdfText(text);
+					dto.setAbstractDescription("Abstract description " + dto.getId());
+					dto.setScientificArea("Area " + dto.getId());
+					dto.setGeo_point(new GeoPoint(50 + id*0.001, 50 - id*0.001));
+					
+					elasticsearchTemplate.getClient().prepareIndex("article", "article", dto.getId().toString())
+					   .setSource(dto, XContentType.JSON).get();
+					articleElasticSearchRepository.save(dto);
+					
+			    	id++;
+			    	pdf.close();
+			    }
+			}
+		}catch(Exception e) {
+			
+		}
 		
-		elasticsearchTemplate.getClient().prepareIndex("article", "article", "2")
-		   .setSource(article2, XContentType.JSON)
-		   .get();
-	
-		
-		
-		articleElasticSearchRepository.save(article1);
-		articleElasticSearchRepository.save(article2);
 	}
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		prepareIndexes();
 		
+	}
+	
+	public static String getText(PDFParser parser) {
+		try {
+			PDFTextStripper textStripper = new PDFTextStripper();
+			String text = textStripper.getText(parser.getPDDocument());
+			return text;
+		} catch (IOException e) {
+			System.out.println("Greksa pri konvertovanju dokumenta u pdf");
+		}
+		return null;
+	}
+	
+	public String getText(File file) {
+		try {
+			PDFParser parser = new PDFParser( new RandomAccessFile(file, "r"));
+			parser.parse();
+			PDFTextStripper textStripper = new PDFTextStripper();
+			String text = textStripper.getText(parser.getPDDocument());
+			return text;
+		} catch (IOException e) {
+			System.out.println("Greksa pri konvertovanju dokumenta u pdf");
+		}
+		return null;
 	}
 
 }

@@ -1,0 +1,10 @@
+div,input[type='text'],button {
+    margin: auto;
+    display: table;
+    margin-bottom: 15px;
+}
+
+.box {
+    outline: solid black 2px;
+    box-shadow: 5px 5px;
+}

@@ -1,0 +1,52 @@
+<div class="box">
+  <table>
+    <tr>
+      <td><label><input (click)="setField('magazine')" type="radio" name="group1" checked />Naziv casopisa</label></td>
+      <td><label><input (click)="setField('title')" type="radio" name="group1" />Naslov</label></td>
+      <td><label><input (click)="setField('author')" type="radio" name="group1" />Autor</label></td>
+      <td><label><input (click)="setField('keywords')" type="radio" name="group1" />Kljucni pojmovi</label></td>
+      <td><label><input (click)="setField('pdfText')" type="radio" name="group1" />Sadrzaj</label></td>
+      <td><label><input (click)="setField('scientificArea')" type="radio" name="group1" />Oblasti</label></td>
+    </tr>
+    <tr>
+      <td colspan="6"><input type="text" placeholder="Unesi vrednost" [(ngModel)]="value"></td>
+    </tr>
+  </table>
+  <button (click)="searchByOptionalField()">Trazi</button>
+</div>
+<br><br>
+<div class="box">
+  <table>
+    <tr>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap.magazine" />Naziv
+          casopisa</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap.magazine"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap.title" />Naslov</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap.title"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap.author" />Autor</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap.author"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap.keywords" />Kljucni
+          pojmovi</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap.keywords"></td>
+      <td><label><input (click)="setField('magazine')" type="checkbox" [(ngModel)]="boolMap.pdfText" />Sadrzaj</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap.pdfText"></td>.
+      <td><label><input (click)="setField('magazine')" type="checkbox"
+            [(ngModel)]="boolMap.scientificArea" />Oblasti</label>
+        <input type="text" placeholder="Unesi vrednost" [(ngModel)]="valueMap.scientificArea"></td>
+    </tr>
+  </table>
+  <button (click)="searchByMultipleOptionalFields()">Trazi</button>
+</div>
+
+
+
+
+
+
+<div>
+  <p *ngFor="let article of articles">
+    {{article.id}}
+    {{article.title}}
+    {{article.author}}
+  </p>
+</div>
