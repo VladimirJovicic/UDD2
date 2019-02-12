@@ -1,0 +1,809 @@
+[2019-01-27T17:00:38,638][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-01-27T17:00:39,544][INFO ][o.e.e.NodeEnvironment    ] [G0Hau3n] using [1] data paths, mounts [[(D:)]], net usable_space [98.4gb], net total_space [394.9gb], spins? [unknown], types [NTFS]
+[2019-01-27T17:00:39,546][INFO ][o.e.e.NodeEnvironment    ] [G0Hau3n] heap size [487.2mb], compressed ordinary object pointers [unknown]
+[2019-01-27T17:00:39,632][INFO ][o.e.n.Node               ] node name [G0Hau3n] derived from node ID [G0Hau3nwR-6vrM5V0_ZyCw]; set [node.name] to override
+[2019-01-27T17:00:39,633][INFO ][o.e.n.Node               ] version[5.6.0], pid[3912], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 7/6.1/x86], JVM[Oracle Corporation/Java HotSpot(TM) Server VM/1.8.0_131/25.131-b11]
+[2019-01-27T17:00:39,634][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Fakultet\Master\UDD\elasticsearch-5.6.0]
+[2019-01-27T17:00:48,955][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [aggs-matrix-stats]
+[2019-01-27T17:00:48,957][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [ingest-common]
+[2019-01-27T17:00:48,957][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-expression]
+[2019-01-27T17:00:48,958][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-groovy]
+[2019-01-27T17:00:48,958][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-mustache]
+[2019-01-27T17:00:48,958][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-painless]
+[2019-01-27T17:00:48,958][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [parent-join]
+[2019-01-27T17:00:48,959][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [percolator]
+[2019-01-27T17:00:48,961][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [reindex]
+[2019-01-27T17:00:48,962][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [transport-netty3]
+[2019-01-27T17:00:48,963][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [transport-netty4]
+[2019-01-27T17:00:48,965][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded plugin [analysis-icu]
+[2019-01-27T17:00:48,965][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded plugin [serbian-plugin]
+[2019-01-27T17:01:16,691][INFO ][o.e.d.DiscoveryModule    ] [G0Hau3n] using discovery type [zen]
+[2019-01-27T17:01:19,015][ERROR][o.e.g.GatewayMetaState   ] [G0Hau3n] failed to read local state, exiting...
+org.elasticsearch.ElasticsearchException: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [?:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [?:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [?:1.8.0_131]
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.SingleParameterInjector.inject(SingleParameterInjector.java:42) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.SingleParameterInjector.getAll(SingleParameterInjector.java:66) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:85) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:173) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:499) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 46 more
+[2019-01-27T17:01:19,068][ERROR][o.e.g.GatewayMetaState   ] [G0Hau3n] failed to read local state, exiting...
+org.elasticsearch.ElasticsearchException: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [?:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [?:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [?:1.8.0_131]
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:173) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:499) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 37 more
+[2019-01-27T17:01:19,092][ERROR][o.e.g.GatewayMetaState   ] [G0Hau3n] failed to read local state, exiting...
+org.elasticsearch.ElasticsearchException: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [?:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [?:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [?:1.8.0_131]
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:176) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:499) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 37 more
+[2019-01-27T17:01:19,124][ERROR][o.e.g.GatewayMetaState   ] [G0Hau3n] failed to read local state, exiting...
+org.elasticsearch.ElasticsearchException: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [?:1.8.0_131]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [?:1.8.0_131]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:1.8.0_131]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [?:1.8.0_131]
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.SingleParameterInjector.inject(SingleParameterInjector.java:42) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.SingleParameterInjector.getAll(SingleParameterInjector.java:66) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:85) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:176) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:499) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 46 more
+[2019-01-27T17:01:19,173][ERROR][o.e.b.Bootstrap          ] Guice Exception: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+Likely root cause: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at <<<guice>>>
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+
+[2019-01-27T17:01:19,219][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+    for parameter 4 at org.elasticsearch.gateway.GatewayService.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayService
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.SingleParameterInjector.inject(SingleParameterInjector.java:42)
+	at org.elasticsearch.common.inject.SingleParameterInjector.getAll(SingleParameterInjector.java:66)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:173)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 46 more
+
+2) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:173)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 37 more
+
+3) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:176)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 37 more
+
+4) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+    for parameter 4 at org.elasticsearch.gateway.GatewayService.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayService
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.SingleParameterInjector.inject(SingleParameterInjector.java:42)
+	at org.elasticsearch.common.inject.SingleParameterInjector.getAll(SingleParameterInjector.java:66)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:176)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 46 more
+
+4 errors
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.0.jar:5.6.0]
+Caused by: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+    for parameter 4 at org.elasticsearch.gateway.GatewayService.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayService
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.SingleParameterInjector.inject(SingleParameterInjector.java:42)
+	at org.elasticsearch.common.inject.SingleParameterInjector.getAll(SingleParameterInjector.java:66)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:173)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 46 more
+
+2) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:173)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 37 more
+
+3) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:176)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 37 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 37 more
+
+4) Error injecting constructor, ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+  at org.elasticsearch.gateway.GatewayMetaState.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayMetaState
+    for parameter 4 at org.elasticsearch.gateway.GatewayService.<init>(Unknown Source)
+  while locating org.elasticsearch.gateway.GatewayService
+Caused by: ElasticsearchException[java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IOException[failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]]; nested: IllegalArgumentException[Unexpected field [mapping_version]];
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgrade(IndexFolderUpgrader.java:90)
+	at org.elasticsearch.common.util.IndexFolderUpgrader.upgradeIndicesIfNeeded(IndexFolderUpgrader.java:128)
+	at org.elasticsearch.gateway.GatewayMetaState.<init>(GatewayMetaState.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:49)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.SingleParameterInjector.inject(SingleParameterInjector.java:42)
+	at org.elasticsearch.common.inject.SingleParameterInjector.getAll(SingleParameterInjector.java:66)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:85)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:116)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:47)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:825)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:43)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:50)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:191)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:818)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:183)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:176)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:161)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:499)
+	at org.elasticsearch.node.Node.<init>(Node.java:245)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84)
+Caused by: java.io.IOException: failed to read [id:11, legacy:false, file:D:\Fakultet\6 semestar\Web\WEB-work\maven.1545762530237\demo-1\nodes\0\indices\Z6CHZHSMQRaaUu7gLyAkow\_state\state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: Unexpected field [mapping_version]
+	at org.elasticsearch.cluster.metadata.IndexMetaData$Builder.fromXContent(IndexMetaData.java:1241)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1309)
+	at org.elasticsearch.cluster.metadata.IndexMetaData$1.fromXContent(IndexMetaData.java:1300)
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:202)
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322)
+	... 46 more
+
+4 errors
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:361) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:164) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:499) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+[2019-01-27T17:14:07,870][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-01-27T17:14:08,568][INFO ][o.e.e.NodeEnvironment    ] [jmOUi4D] using [1] data paths, mounts [[(D:)]], net usable_space [98.4gb], net total_space [394.9gb], spins? [unknown], types [NTFS]
+[2019-01-27T17:14:08,569][INFO ][o.e.e.NodeEnvironment    ] [jmOUi4D] heap size [487.2mb], compressed ordinary object pointers [unknown]
+[2019-01-27T17:14:08,573][INFO ][o.e.n.Node               ] node name [jmOUi4D] derived from node ID [jmOUi4DOQlay5R6RQWqARQ]; set [node.name] to override
+[2019-01-27T17:14:08,574][INFO ][o.e.n.Node               ] version[5.6.0], pid[6128], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 7/6.1/x86], JVM[Oracle Corporation/Java HotSpot(TM) Server VM/1.8.0_131/25.131-b11]
+[2019-01-27T17:14:08,574][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Fakultet\Master\UDD\elasticsearch-5.6.0]
+[2019-01-27T17:14:10,585][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [aggs-matrix-stats]
+[2019-01-27T17:14:10,585][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [ingest-common]
+[2019-01-27T17:14:10,586][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [lang-expression]
+[2019-01-27T17:14:10,586][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [lang-groovy]
+[2019-01-27T17:14:10,586][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [lang-mustache]
+[2019-01-27T17:14:10,586][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [lang-painless]
+[2019-01-27T17:14:10,588][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [parent-join]
+[2019-01-27T17:14:10,588][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [percolator]
+[2019-01-27T17:14:10,588][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [reindex]
+[2019-01-27T17:14:10,589][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [transport-netty3]
+[2019-01-27T17:14:10,727][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded module [transport-netty4]
+[2019-01-27T17:14:10,729][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded plugin [analysis-icu]
+[2019-01-27T17:14:10,729][INFO ][o.e.p.PluginsService     ] [jmOUi4D] loaded plugin [serbian-plugin]
+[2019-01-27T17:14:15,391][INFO ][o.e.d.DiscoveryModule    ] [jmOUi4D] using discovery type [zen]
+[2019-01-27T17:14:17,474][INFO ][o.e.n.Node               ] initialized
+[2019-01-27T17:14:17,475][INFO ][o.e.n.Node               ] [jmOUi4D] starting ...
+[2019-01-27T17:14:20,983][INFO ][o.e.t.TransportService   ] [jmOUi4D] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-01-27T17:14:21,020][WARN ][o.e.b.BootstrapChecks    ] [jmOUi4D] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-01-27T17:14:24,161][INFO ][o.e.c.s.ClusterService   ] [jmOUi4D] new_master {jmOUi4D}{jmOUi4DOQlay5R6RQWqARQ}{7qMvxLAjSWmPynQxY5T-IQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-01-27T17:14:24,302][INFO ][o.e.g.GatewayService     ] [jmOUi4D] recovered [0] indices into cluster_state
+[2019-01-27T17:14:25,788][INFO ][o.e.h.n.Netty4HttpServerTransport] [jmOUi4D] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-01-27T17:14:25,788][INFO ][o.e.n.Node               ] [jmOUi4D] started
+[2019-01-27T17:31:30,444][WARN ][o.e.m.j.JvmGcMonitorService] [jmOUi4D] [gc][young][1025][6] duration [3.4s], collections [1]/[4s], total [3.4s]/[3.6s], memory [125.6mb]->[89.8mb]/[487.2mb], all_pools {[young] [97.1mb]->[2mb]/[102.5mb]}{[survivor] [12.7mb]->[5.4mb]/[12.7mb]}{[old] [15.7mb]->[82.9mb]/[372mb]}
+[2019-01-27T17:31:30,834][WARN ][o.e.m.j.JvmGcMonitorService] [jmOUi4D] [gc][1025] overhead, spent [3.5s] collecting in the last [4s]
+[2019-01-27T17:31:34,709][INFO ][o.e.c.m.MetaDataCreateIndexService] [jmOUi4D] [articles] creating index, cause [api], templates [], shards [1]/[0], mappings []
+[2019-01-27T17:31:38,162][WARN ][o.e.m.j.JvmGcMonitorService] [jmOUi4D] [gc][1032] overhead, spent [885ms] collecting in the last [1.3s]
+[2019-01-27T17:31:38,187][INFO ][o.e.c.r.a.AllocationService] [jmOUi4D] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[articles][0]] ...]).
+[2019-01-27T17:31:39,551][INFO ][o.e.c.m.MetaDataMappingService] [jmOUi4D] [articles/tLvMeFAaRpuISGwNlTyClQ] create_mapping [article]
+[2019-01-27T17:31:44,858][INFO ][o.e.c.m.MetaDataCreateIndexService] [jmOUi4D] [reviewers] creating index, cause [api], templates [], shards [2]/[1], mappings []
+[2019-01-27T17:31:46,113][INFO ][o.e.c.m.MetaDataMappingService] [jmOUi4D] [reviewers/Usvkb2-9RAyUqqgEPjFM5Q] create_mapping [reviewers]

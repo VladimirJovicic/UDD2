@@ -1,0 +1,33 @@
+[2019-01-15T00:18:12,210][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-01-15T00:18:12,879][INFO ][o.e.e.NodeEnvironment    ] [G0Hau3n] using [1] data paths, mounts [[(D:)]], net usable_space [99gb], net total_space [394.9gb], spins? [unknown], types [NTFS]
+[2019-01-15T00:18:12,880][INFO ][o.e.e.NodeEnvironment    ] [G0Hau3n] heap size [487.2mb], compressed ordinary object pointers [unknown]
+[2019-01-15T00:18:13,051][INFO ][o.e.n.Node               ] node name [G0Hau3n] derived from node ID [G0Hau3nwR-6vrM5V0_ZyCw]; set [node.name] to override
+[2019-01-15T00:18:13,052][INFO ][o.e.n.Node               ] version[5.6.0], pid[1788], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 7/6.1/x86], JVM[Oracle Corporation/Java HotSpot(TM) Server VM/1.8.0_131/25.131-b11]
+[2019-01-15T00:18:13,052][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=D:\Fakultet\Master\UDD\elasticsearch-5.6.0]
+[2019-01-15T00:18:17,223][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [aggs-matrix-stats]
+[2019-01-15T00:18:17,224][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [ingest-common]
+[2019-01-15T00:18:17,225][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-expression]
+[2019-01-15T00:18:17,225][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-groovy]
+[2019-01-15T00:18:17,226][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-mustache]
+[2019-01-15T00:18:17,226][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [lang-painless]
+[2019-01-15T00:18:17,226][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [parent-join]
+[2019-01-15T00:18:17,226][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [percolator]
+[2019-01-15T00:18:17,228][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [reindex]
+[2019-01-15T00:18:17,228][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [transport-netty3]
+[2019-01-15T00:18:17,229][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded module [transport-netty4]
+[2019-01-15T00:18:17,231][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded plugin [analysis-icu]
+[2019-01-15T00:18:17,232][INFO ][o.e.p.PluginsService     ] [G0Hau3n] loaded plugin [serbian-plugin]
+[2019-01-15T00:18:26,819][INFO ][o.e.d.DiscoveryModule    ] [G0Hau3n] using discovery type [zen]
+[2019-01-15T00:18:28,458][INFO ][o.e.n.Node               ] initialized
+[2019-01-15T00:18:28,458][INFO ][o.e.n.Node               ] [G0Hau3n] starting ...
+[2019-01-15T00:18:31,569][INFO ][o.e.t.TransportService   ] [G0Hau3n] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-01-15T00:18:31,606][WARN ][o.e.b.BootstrapChecks    ] [G0Hau3n] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-01-15T00:18:34,849][INFO ][o.e.c.s.ClusterService   ] [G0Hau3n] new_master {G0Hau3n}{G0Hau3nwR-6vrM5V0_ZyCw}{JfAHVLWdR-mJ1iceMXIllA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-01-15T00:18:37,424][INFO ][o.e.h.n.Netty4HttpServerTransport] [G0Hau3n] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-01-15T00:18:37,425][INFO ][o.e.n.Node               ] [G0Hau3n] started
+[2019-01-15T00:18:37,508][INFO ][o.e.g.GatewayService     ] [G0Hau3n] recovered [2] indices into cluster_state
+[2019-01-15T00:18:38,691][INFO ][o.e.c.r.a.AllocationService] [G0Hau3n] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[articles][0]] ...]).
+[2019-01-15T01:51:16,324][INFO ][o.e.n.Node               ] [G0Hau3n] stopping ...
+[2019-01-15T01:51:17,533][INFO ][o.e.n.Node               ] [G0Hau3n] stopped
+[2019-01-15T01:51:17,534][INFO ][o.e.n.Node               ] [G0Hau3n] closing ...
+[2019-01-15T01:51:17,977][INFO ][o.e.n.Node               ] [G0Hau3n] closed

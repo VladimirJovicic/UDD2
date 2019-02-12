@@ -1,0 +1,213 @@
+[2019-02-09T20:03:41,015][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-09T20:03:41,688][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-09T20:03:41,689][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-09T20:03:41,996][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-09T20:03:41,998][INFO ][o.e.n.Node               ] version[5.6.0], pid[10116], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-09T20:03:42,003][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-09T20:03:47,085][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-09T20:03:47,086][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-09T20:03:47,087][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-09T20:03:47,088][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-09T20:03:47,089][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-09T20:03:47,091][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-09T20:03:47,094][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-09T20:03:47,095][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-09T20:03:47,096][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-09T20:03:47,101][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-09T20:03:47,102][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-09T20:03:47,105][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-09T20:03:47,106][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-09T20:03:57,233][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-09T20:03:59,378][INFO ][o.e.n.Node               ] initialized
+[2019-02-09T20:03:59,381][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-09T20:04:01,758][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-09T20:04:01,798][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-09T20:04:04,961][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{FRysfey8So2NUg_H5ab4Hg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-09T20:04:06,319][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-09T20:04:06,320][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-09T20:04:07,007][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-09T20:04:08,346][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-09T20:05:39,600][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-09T20:05:39,602][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-09T20:05:39,715][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-09T20:05:39,716][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-09T20:05:39,742][INFO ][o.e.n.Node               ] [h9_TyQL] closed
+[2019-02-11T17:16:34,068][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 12 more
+[2019-02-11T17:16:34,077][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+[2019-02-11T17:18:28,092][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 12 more
+[2019-02-11T17:18:28,108][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+[2019-02-11T17:21:54,531][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 12 more
+[2019-02-11T17:21:54,542][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+[2019-02-11T17:22:07,021][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-11T17:22:07,165][INFO ][o.e.e.NodeEnvironment    ] [cZ-ol7_] using [1] data paths, mounts [[(C:)]], net usable_space [72gb], net total_space [111.1gb], spins? [unknown], types [NTFS]
+[2019-02-11T17:22:07,166][INFO ][o.e.e.NodeEnvironment    ] [cZ-ol7_] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-11T17:22:07,170][INFO ][o.e.n.Node               ] node name [cZ-ol7_] derived from node ID [cZ-ol7_wQg2Kf50LOhXlEA]; set [node.name] to override
+[2019-02-11T17:22:07,171][INFO ][o.e.n.Node               ] version[5.6.0], pid[16728], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2019-02-11T17:22:07,171][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Vladimir.JOVICIC\Desktop\elasticsearch-5.6.0]
+[2019-02-11T17:22:08,271][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [aggs-matrix-stats]
+[2019-02-11T17:22:08,271][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [ingest-common]
+[2019-02-11T17:22:08,272][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [lang-expression]
+[2019-02-11T17:22:08,273][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [lang-groovy]
+[2019-02-11T17:22:08,274][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [lang-mustache]
+[2019-02-11T17:22:08,274][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [lang-painless]
+[2019-02-11T17:22:08,274][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [parent-join]
+[2019-02-11T17:22:08,275][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [percolator]
+[2019-02-11T17:22:08,276][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [reindex]
+[2019-02-11T17:22:08,276][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [transport-netty3]
+[2019-02-11T17:22:08,277][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded module [transport-netty4]
+[2019-02-11T17:22:08,278][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded plugin [analysis-icu]
+[2019-02-11T17:22:08,278][INFO ][o.e.p.PluginsService     ] [cZ-ol7_] loaded plugin [serbian-plugin]
+[2019-02-11T17:22:10,121][INFO ][o.e.d.DiscoveryModule    ] [cZ-ol7_] using discovery type [zen]
+[2019-02-11T17:22:10,585][INFO ][o.e.n.Node               ] initialized
+[2019-02-11T17:22:10,585][INFO ][o.e.n.Node               ] [cZ-ol7_] starting ...
+[2019-02-11T17:22:10,956][INFO ][o.e.t.TransportService   ] [cZ-ol7_] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-11T17:22:10,965][WARN ][o.e.b.BootstrapChecks    ] [cZ-ol7_] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-11T17:22:14,037][INFO ][o.e.c.s.ClusterService   ] [cZ-ol7_] new_master {cZ-ol7_}{cZ-ol7_wQg2Kf50LOhXlEA}{xbfCge2NTZ6460grkW6BQQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-11T17:22:14,088][INFO ][o.e.g.GatewayService     ] [cZ-ol7_] recovered [0] indices into cluster_state
+[2019-02-11T17:22:14,209][INFO ][o.e.h.n.Netty4HttpServerTransport] [cZ-ol7_] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-11T17:22:14,209][INFO ][o.e.n.Node               ] [cZ-ol7_] started
+[2019-02-11T17:25:05,860][INFO ][o.e.n.Node               ] [cZ-ol7_] stopping ...
+[2019-02-11T17:25:05,896][INFO ][o.e.n.Node               ] [cZ-ol7_] stopped
+[2019-02-11T17:25:05,897][INFO ][o.e.n.Node               ] [cZ-ol7_] closing ...
+[2019-02-11T17:25:05,909][INFO ][o.e.n.Node               ] [cZ-ol7_] closed

@@ -1,0 +1,1312 @@
+[2019-02-12T08:43:10,619][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-12T08:43:10,712][INFO ][o.e.e.NodeEnvironment    ] [CDApiRs] using [1] data paths, mounts [[(C:)]], net usable_space [72gb], net total_space [111.1gb], spins? [unknown], types [NTFS]
+[2019-02-12T08:43:10,713][INFO ][o.e.e.NodeEnvironment    ] [CDApiRs] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-12T08:43:10,771][INFO ][o.e.n.Node               ] node name [CDApiRs] derived from node ID [CDApiRsLR26TiP1-O7hS2A]; set [node.name] to override
+[2019-02-12T08:43:10,771][INFO ][o.e.n.Node               ] version[5.6.0], pid[20808], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2019-02-12T08:43:10,771][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Vladimir.JOVICIC\Desktop\elasticsearch-5.6.0]
+[2019-02-12T08:43:12,055][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [aggs-matrix-stats]
+[2019-02-12T08:43:12,057][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [ingest-common]
+[2019-02-12T08:43:12,058][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [lang-expression]
+[2019-02-12T08:43:12,058][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [lang-groovy]
+[2019-02-12T08:43:12,059][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [lang-mustache]
+[2019-02-12T08:43:12,059][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [lang-painless]
+[2019-02-12T08:43:12,060][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [parent-join]
+[2019-02-12T08:43:12,060][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [percolator]
+[2019-02-12T08:43:12,061][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [reindex]
+[2019-02-12T08:43:12,061][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [transport-netty3]
+[2019-02-12T08:43:12,061][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded module [transport-netty4]
+[2019-02-12T08:43:12,063][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded plugin [analysis-icu]
+[2019-02-12T08:43:12,063][INFO ][o.e.p.PluginsService     ] [CDApiRs] loaded plugin [serbian-plugin]
+[2019-02-12T08:43:14,526][INFO ][o.e.d.DiscoveryModule    ] [CDApiRs] using discovery type [zen]
+[2019-02-12T08:43:15,091][INFO ][o.e.n.Node               ] initialized
+[2019-02-12T08:43:15,092][INFO ][o.e.n.Node               ] [CDApiRs] starting ...
+[2019-02-12T08:43:15,448][INFO ][o.e.t.TransportService   ] [CDApiRs] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-12T08:43:15,461][WARN ][o.e.b.BootstrapChecks    ] [CDApiRs] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-12T08:43:18,544][INFO ][o.e.c.s.ClusterService   ] [CDApiRs] new_master {CDApiRs}{CDApiRsLR26TiP1-O7hS2A}{t1s5dcstTFWCw_gxsEvAvw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-12T08:43:18,755][INFO ][o.e.h.n.Netty4HttpServerTransport] [CDApiRs] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-12T08:43:18,755][INFO ][o.e.n.Node               ] [CDApiRs] started
+[2019-02-12T08:43:19,035][INFO ][o.e.g.GatewayService     ] [CDApiRs] recovered [1] indices into cluster_state
+[2019-02-12T08:43:19,310][INFO ][o.e.c.r.a.AllocationService] [CDApiRs] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[article][2]] ...]).
+[2019-02-12T08:44:37,489][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T08:44:37,602][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T08:53:54,227][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T08:53:54,378][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T08:53:57,021][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][2], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=4Cy2_iLESLyRsNzzYGMS5w]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1211110.0,
+        161116.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 161116.0;2: [geo_distance] center point longitude is invalid: 1211110.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T08:53:56,973][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][0], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=AlF0cC0KSXSfXgHHLREAkw]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1211110.0,
+        161116.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 161116.0;2: [geo_distance] center point longitude is invalid: 1211110.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T08:53:56,974][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][1], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ygk9fDf0SAODWOVGLhNbfA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1211110.0,
+        161116.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 161116.0;2: [geo_distance] center point longitude is invalid: 1211110.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T08:53:56,973][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][4], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=KM04VflwQHSYx1MOdQ_TJg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1211110.0,
+        161116.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 161116.0;2: [geo_distance] center point longitude is invalid: 1211110.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T08:53:57,017][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][3], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ZVjDtFirTzijSP_4yMGUNg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1211110.0,
+        161116.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 161116.0;2: [geo_distance] center point longitude is invalid: 1211110.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T08:53:57,066][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 161116.0;2: [geo_distance] center point longitude is invalid: 1211110.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-02-12T08:59:01,832][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T08:59:01,908][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:00:50,088][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:00:50,194][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:04:39,863][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:13:19,800][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:13:19,867][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:15:32,263][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:15:32,344][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:17:45,104][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:17:45,197][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:18:55,988][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:18:56,051][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:19:31,865][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:19:31,934][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:20:29,553][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][0], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=AlF0cC0KSXSfXgHHLREAkw]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1000.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;2: [geo_distance] center point longitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:29,565][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][4], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=KM04VflwQHSYx1MOdQ_TJg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1000.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;2: [geo_distance] center point longitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:29,562][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][3], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ZVjDtFirTzijSP_4yMGUNg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1000.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;2: [geo_distance] center point longitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:29,575][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;2: [geo_distance] center point longitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-02-12T09:20:29,561][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][2], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=4Cy2_iLESLyRsNzzYGMS5w]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1000.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;2: [geo_distance] center point longitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:29,559][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][1], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ygk9fDf0SAODWOVGLhNbfA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        1000.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;2: [geo_distance] center point longitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:33,637][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][2], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=4Cy2_iLESLyRsNzzYGMS5w]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        100.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:33,637][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][0], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=AlF0cC0KSXSfXgHHLREAkw]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        100.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:33,638][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][1], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ygk9fDf0SAODWOVGLhNbfA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        100.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:33,639][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][3], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ZVjDtFirTzijSP_4yMGUNg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        100.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:33,649][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][4], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=KM04VflwQHSYx1MOdQ_TJg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        100.0,
+        1000.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:33,657][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 1000.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-02-12T09:20:51,706][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][1], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ygk9fDf0SAODWOVGLhNbfA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        999.0,
+        999.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 999.0;2: [geo_distance] center point longitude is invalid: 999.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:51,710][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][4], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=KM04VflwQHSYx1MOdQ_TJg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        999.0,
+        999.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 999.0;2: [geo_distance] center point longitude is invalid: 999.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:51,709][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][3], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=ZVjDtFirTzijSP_4yMGUNg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        999.0,
+        999.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 999.0;2: [geo_distance] center point longitude is invalid: 999.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:51,707][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][0], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=AlF0cC0KSXSfXgHHLREAkw]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        999.0,
+        999.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 999.0;2: [geo_distance] center point longitude is invalid: 999.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:51,709][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] [article][2], node[CDApiRsLR26TiP1-O7hS2A], [P], s[STARTED], a[id=4Cy2_iLESLyRsNzzYGMS5w]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[article], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "query" : {
+    "geo_distance" : {
+      "geo_point" : [
+        999.0,
+        999.0
+      ],
+      "distance" : 1000.0,
+      "distance_type" : "arc",
+      "validation_method" : "STRICT",
+      "ignore_unmapped" : false,
+      "boost" : 1.0
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [CDApiRs][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 999.0;2: [geo_distance] center point longitude is invalid: 999.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+[2019-02-12T09:20:51,718][DEBUG][o.e.a.s.TransportSearchAction] [CDApiRs] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: couldn't validate latitude/ longitude values
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:293) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+Caused by: org.elasticsearch.index.query.QueryValidationException: Validation Failed: 1: [geo_distance] center point latitude is invalid: 999.0;2: [geo_distance] center point longitude is invalid: 999.0;
+	at org.elasticsearch.index.query.QueryValidationException.addValidationError(QueryValidationException.java:42) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.addValidationError(AbstractQueryBuilder.java:165) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.checkLatLon(GeoDistanceQueryBuilder.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.GeoDistanceQueryBuilder.doToQuery(GeoDistanceQueryBuilder.java:291) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-02-12T09:22:27,534][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:22:27,598][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:29:50,111][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:29:50,169][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:40:49,941][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:40:50,033][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:42:57,504][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:42:57,599][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:44:46,498][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:52:14,317][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:52:14,447][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:52:44,171][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:52:44,230][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:55:31,589][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T09:55:31,675][INFO ][o.e.c.m.MetaDataMappingService] [CDApiRs] [article/eJcO5WArQ7KiawDsf1HKCg] update_mapping [article]
+[2019-02-12T10:10:26,796][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-12T10:10:26,811][INFO ][o.e.n.Node               ] [CDApiRs] stopping ...
+[2019-02-12T10:10:26,849][INFO ][o.e.n.Node               ] [CDApiRs] stopped
+[2019-02-12T10:10:26,849][INFO ][o.e.n.Node               ] [CDApiRs] closing ...
+[2019-02-12T10:10:26,864][INFO ][o.e.n.Node               ] [CDApiRs] closed

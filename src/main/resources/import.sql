@@ -1,0 +1,1 @@
+insert into article (ID,ABSTRACT_DESCRIPTION,AUTHOR,KEYWORDS,MAGAZINE,PDF_TEXT,SCIENTIFIC_AREA,TITLE) values (1,'apstraktni opis','pera','keyword1 keyword2','casopis','neki pdf tekst','biologija','pronalazenje biologije');

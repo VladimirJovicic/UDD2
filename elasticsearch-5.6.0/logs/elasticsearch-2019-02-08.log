@@ -1,0 +1,38 @@
+[2019-02-08T00:56:13,424][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-08T00:56:16,531][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-08T00:56:16,531][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-08T00:56:17,292][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-08T00:56:17,293][INFO ][o.e.n.Node               ] version[5.6.0], pid[10808], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-08T00:56:17,323][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-08T00:56:32,917][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-08T00:56:32,919][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-08T00:56:32,921][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-08T00:56:32,925][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-08T00:56:32,927][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-08T00:56:32,928][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-08T00:56:32,929][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-08T00:56:32,930][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-08T00:56:32,931][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-08T00:56:32,932][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-08T00:56:32,934][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-08T00:56:32,936][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-08T00:56:32,937][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-08T00:57:35,324][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-08T00:57:42,651][INFO ][o.e.n.Node               ] initialized
+[2019-02-08T00:57:42,651][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-08T00:57:45,396][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-08T00:57:45,465][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-08T00:57:48,835][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{mmMyQ5LFTRmS1_UGsoGYGg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-08T00:57:50,153][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-08T00:57:50,153][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-08T00:57:51,841][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-08T00:57:54,328][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-08T01:02:18,647][WARN ][o.e.m.j.JvmGcMonitorService] [h9_TyQL] [gc][young][263][5] duration [8.1s], collections [1]/[8.5s], total [8.1s]/[8.5s], memory [161.3mb]->[107.1mb]/[483.3mb], all_pools {[young] [127mb]->[40.3mb]/[133.3mb]}{[survivor] [16.6mb]->[14.5mb]/[16.6mb]}{[old] [17.6mb]->[57.1mb]/[333.3mb]}
+[2019-02-08T01:02:19,445][WARN ][o.e.m.j.JvmGcMonitorService] [h9_TyQL] [gc][263] overhead, spent [8.1s] collecting in the last [8.5s]
+[2019-02-08T01:03:04,301][WARN ][o.e.m.j.JvmGcMonitorService] [h9_TyQL] [gc][268] overhead, spent [40.1s] collecting in the last [40.7s]
+[2019-02-08T01:03:04,602][WARN ][o.e.c.s.ClusterService   ] [h9_TyQL] cluster state update task [put-mapping[radovi]] took [42.9s] above the warn threshold of 30s
+[2019-02-08T01:10:07,305][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-08T01:10:07,559][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-08T01:10:09,695][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-08T01:10:09,695][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-08T01:10:10,128][INFO ][o.e.n.Node               ] [h9_TyQL] closed

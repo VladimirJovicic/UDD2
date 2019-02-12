@@ -1,0 +1,559 @@
+[2019-02-06T18:19:19,070][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-06T18:19:20,125][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-06T18:19:20,125][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-06T18:19:20,410][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-06T18:19:20,410][INFO ][o.e.n.Node               ] version[5.6.0], pid[8524], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-06T18:19:20,410][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-06T18:19:28,471][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-06T18:19:28,487][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-06T18:19:28,487][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-06T18:19:49,126][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-06T18:19:51,600][INFO ][o.e.n.Node               ] initialized
+[2019-02-06T18:19:51,600][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-06T18:19:54,019][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-06T18:19:54,056][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-06T18:19:57,274][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{xxSqhvQ8SO-U6CmMFJXinQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-06T18:19:58,207][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-06T18:19:58,208][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-06T18:19:59,943][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-06T18:20:01,665][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-06T18:20:56,353][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-06T18:20:56,355][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-06T18:20:56,410][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-06T18:20:56,412][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-06T18:20:56,432][INFO ][o.e.n.Node               ] [h9_TyQL] closed
+[2019-02-06T18:33:14,186][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-06T18:33:14,521][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-06T18:33:14,523][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-06T18:33:14,671][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-06T18:33:14,673][INFO ][o.e.n.Node               ] version[5.6.0], pid[10176], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-06T18:33:14,675][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-06T18:33:18,472][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-06T18:33:18,473][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-06T18:33:18,474][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-06T18:33:18,476][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-06T18:33:18,476][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-06T18:33:18,478][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-06T18:33:18,480][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-06T18:33:18,481][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-06T18:33:18,482][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-06T18:33:18,487][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-06T18:33:18,488][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-06T18:33:18,493][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-06T18:33:18,494][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-06T18:33:25,702][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-06T18:33:27,791][INFO ][o.e.n.Node               ] initialized
+[2019-02-06T18:33:27,791][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-06T18:33:29,572][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-06T18:33:29,594][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-06T18:33:32,813][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{0UOcefqfQwG2pkOPVX29kQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-06T18:33:33,915][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-06T18:33:33,931][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-06T18:33:34,909][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-06T18:33:36,047][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-06T18:33:38,724][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-06T18:33:38,727][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-06T18:33:38,784][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-06T18:33:38,784][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-06T18:33:38,815][INFO ][o.e.n.Node               ] [h9_TyQL] closed
+[2019-02-06T18:38:58,577][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-06T18:38:59,031][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-06T18:38:59,031][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-06T18:38:59,216][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-06T18:38:59,216][INFO ][o.e.n.Node               ] version[5.6.0], pid[8560], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-06T18:38:59,216][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-06T18:39:03,041][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-06T18:39:03,042][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-06T18:39:03,042][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-06T18:39:03,043][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-06T18:39:03,045][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-06T18:39:03,046][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-06T18:39:03,047][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-06T18:39:03,048][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-06T18:39:03,049][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-06T18:39:03,049][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-06T18:39:03,049][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-06T18:39:03,049][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-06T18:39:03,049][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-06T18:39:09,017][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-06T18:39:10,739][INFO ][o.e.n.Node               ] initialized
+[2019-02-06T18:39:10,739][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-06T18:39:12,577][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-06T18:39:12,612][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-06T18:39:15,762][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{Qn7oPhXTRP-Pa5p98eQtwg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-06T18:39:16,889][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-06T18:39:16,890][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-06T18:39:17,323][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-06T18:39:18,209][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-06T18:40:10,285][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-06T18:40:10,289][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-06T18:40:10,346][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-06T18:40:10,349][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-06T18:40:10,377][INFO ][o.e.n.Node               ] [h9_TyQL] closed
+[2019-02-06T19:37:09,062][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-06T19:37:09,679][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-06T19:37:09,679][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-06T19:37:09,810][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-06T19:37:09,810][INFO ][o.e.n.Node               ] version[5.6.0], pid[9872], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-06T19:37:09,826][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-06T19:37:14,315][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-06T19:37:14,316][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-06T19:37:14,317][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-06T19:37:14,317][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-06T19:37:14,320][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-06T19:37:14,322][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-06T19:37:14,326][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-06T19:37:14,331][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-06T19:37:14,333][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-06T19:37:14,334][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-06T19:37:14,335][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-06T19:37:14,338][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-06T19:37:14,341][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-06T19:37:22,037][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-06T19:37:23,799][INFO ][o.e.n.Node               ] initialized
+[2019-02-06T19:37:23,799][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-06T19:37:25,817][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-06T19:37:25,849][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-06T19:37:29,049][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{5AMM0uIwTouYhfA1B8fzDQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-06T19:37:30,387][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-06T19:37:30,391][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-06T19:37:30,945][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-06T19:37:31,993][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-06T20:21:18,473][DEBUG][o.e.a.s.TransportSearchAction] [h9_TyQL] [libraryserbian][0], node[h9_TyQLbRPSW6ce165cJrQ], [P], s[STARTED], a[id=R2Mwz86qTuya8NFJUnGckA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[libraryserbian], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[radovi], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "size" : 0,
+  "query" : {
+    "query_string" : {
+      "query" : "autor:",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [h9_TyQL][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [autor:]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'autor:': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_66]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_66]
+[2019-02-06T20:21:19,007][DEBUG][o.e.a.s.TransportSearchAction] [h9_TyQL] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: Failed to parse query [autor:]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'autor:': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-02-06T20:21:40,298][DEBUG][o.e.a.s.TransportSearchAction] [h9_TyQL] [libraryserbian][0], node[h9_TyQLbRPSW6ce165cJrQ], [P], s[STARTED], a[id=R2Mwz86qTuya8NFJUnGckA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[libraryserbian], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[radovi], routing='null', preference='null', requestCache=null, scroll=null, maxConcurrentShardRequests=5, batchedReduceSize=512, preFilterShardSize=128, source={
+  "size" : 0,
+  "query" : {
+    "query_string" : {
+      "query" : "autor:",
+      "fields" : [ ],
+      "use_dis_max" : true,
+      "tie_breaker" : 0.0,
+      "default_operator" : "or",
+      "auto_generate_phrase_queries" : false,
+      "max_determinized_states" : 10000,
+      "enable_position_increments" : true,
+      "fuzziness" : "AUTO",
+      "fuzzy_prefix_length" : 0,
+      "fuzzy_max_expansions" : 50,
+      "phrase_slop" : 0,
+      "escape" : false,
+      "split_on_whitespace" : true,
+      "boost" : 1.0
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [h9_TyQL][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: org.elasticsearch.index.query.QueryShardException: Failed to parse query [autor:]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'autor:': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_66]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[?:1.8.0_66]
+[2019-02-06T20:21:40,317][DEBUG][o.e.a.s.TransportSearchAction] [h9_TyQL] All shards failed for phase: [query]
+org.elasticsearch.index.query.QueryShardException: Failed to parse query [autor:]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1042) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.AbstractQueryBuilder.toQuery(AbstractQueryBuilder.java:96) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.lambda$toQuery$1(QueryShardContext.java:313) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:325) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.index.query.QueryShardContext.toQuery(QueryShardContext.java:312) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:617) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:485) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:461) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:340) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:337) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:644) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.6.0.jar:5.6.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Cannot parse 'autor:': Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:116) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+Caused by: org.apache.lucene.queryparser.classic.ParseException: Encountered "<EOF>" at line 1, column 6.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <NUMBER> ...
+    
+	at org.apache.lucene.queryparser.classic.QueryParser.generateParseException(QueryParser.java:931) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.jj_consume_token(QueryParser.java:813) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Clause(QueryParser.java:373) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.Query(QueryParser.java:244) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParser.TopLevelQuery(QueryParser.java:215) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.QueryParserBase.parse(QueryParserBase.java:111) ~[lucene-queryparser-6.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.apache.lucene.queryparser.classic.MapperQueryParser.parse(MapperQueryParser.java:824) ~[elasticsearch-5.6.0.jar:6.6.0 5c7a7b65d2aa7ce5ec96458315c661a18b320241 - ishan - 2017-05-30 07:30:08]
+	at org.elasticsearch.index.query.QueryStringQueryBuilder.doToQuery(QueryStringQueryBuilder.java:1040) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 17 more
+[2019-02-06T21:25:25,328][WARN ][o.e.m.j.JvmGcMonitorService] [h9_TyQL] [gc][young][6463][6] duration [4.1s], collections [1]/[1s], total [4.1s]/[4.4s], memory [197mb]->[197mb]/[483.3mb], all_pools {[young] [133.3mb]->[133.3mb]/[133.3mb]}{[survivor] [16.3mb]->[16.3mb]/[16.6mb]}{[old] [47.3mb]->[101.2mb]/[333.3mb]}
+[2019-02-06T21:25:25,805][WARN ][o.e.m.j.JvmGcMonitorService] [h9_TyQL] [gc][6463] overhead, spent [4.1s] collecting in the last [1s]
+[2019-02-06T21:25:40,115][WARN ][o.e.m.j.JvmGcMonitorService] [h9_TyQL] [gc][6469] overhead, spent [8.9s] collecting in the last [9.2s]
+[2019-02-06T22:50:36,100][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-06T22:50:36,294][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-06T22:50:38,412][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-06T22:50:38,414][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-06T22:50:38,851][INFO ][o.e.n.Node               ] [h9_TyQL] closed
+[2019-02-06T22:57:40,439][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-06T22:57:40,920][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-06T22:57:40,921][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-06T22:57:41,028][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-06T22:57:41,029][INFO ][o.e.n.Node               ] version[5.6.0], pid[11224], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-06T22:57:41,030][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-06T22:57:44,781][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-06T22:57:44,782][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-06T22:57:44,782][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-06T22:57:44,783][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-06T22:57:44,785][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-06T22:57:44,786][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-06T22:57:44,787][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-06T22:57:44,789][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-06T22:57:44,790][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-06T22:57:44,791][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-06T22:57:44,795][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-06T22:57:44,797][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-06T22:57:44,798][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-06T22:57:51,449][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-06T22:57:53,034][INFO ][o.e.n.Node               ] initialized
+[2019-02-06T22:57:53,034][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-06T22:57:55,169][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-06T22:57:55,214][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-06T22:57:58,358][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{scHHS3-XS86T9bmlIzfrsw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-06T22:57:59,745][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-06T22:57:59,745][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-06T22:58:00,100][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-06T22:58:00,932][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-06T23:38:29,593][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-06T23:38:29,603][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-06T23:38:29,702][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-06T23:38:29,704][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-06T23:38:29,757][INFO ][o.e.n.Node               ] [h9_TyQL] closed
+[2019-02-06T23:43:46,280][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-06T23:43:46,727][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-06T23:43:46,728][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-06T23:43:46,855][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-06T23:43:46,856][INFO ][o.e.n.Node               ] version[5.6.0], pid[6660], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-06T23:43:46,857][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-06T23:43:51,166][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-06T23:43:51,168][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-06T23:43:51,168][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-06T23:43:51,170][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-06T23:43:51,171][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-06T23:43:51,173][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-06T23:43:51,174][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-06T23:43:51,179][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-06T23:43:51,182][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-06T23:43:51,183][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-06T23:43:51,184][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-06T23:43:51,189][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-06T23:43:51,190][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-06T23:43:58,078][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-06T23:43:59,665][INFO ][o.e.n.Node               ] initialized
+[2019-02-06T23:43:59,666][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-06T23:44:01,817][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-06T23:44:01,878][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-06T23:44:05,048][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{_ZRbTYTiSsiI1R76FUYb3Q}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-06T23:44:06,745][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-06T23:44:06,746][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-06T23:44:07,154][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-06T23:44:08,114][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-06T23:50:39,508][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-06T23:50:39,513][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-06T23:50:39,568][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-06T23:50:39,570][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-06T23:50:39,590][INFO ][o.e.n.Node               ] [h9_TyQL] closed
